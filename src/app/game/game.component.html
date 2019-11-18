@@ -1,0 +1,36 @@
+<!-- Hangman component -->
+<app-hangman [tries]="tries"></app-hangman>
+
+<!-- Game result -->
+<div *ngIf="!gameStarted && gameFinish" class="startGame">
+    {{ result }}
+</div>
+
+<!-- Game started -->
+<div *ngIf="!gameStarted" class="startGame">
+    <button (click)="onStartClick()" class="startButton">
+        Start Game
+    </button>
+</div>
+<!-- Guessed word and keyboard -->
+<div class="game" *ngIf="gameStarted">
+    <!-- Guessed word -->
+    <div class="word">
+        <app-word [word]="guessedWord"></app-word>  
+    </div>
+    <!-- Keyboard -->
+    <div class="keyboardRow" *ngFor="let row of letters" >
+        <div class="letterRows" *ngFor="let letter of row">
+            <ng-container [ngSwitch]="isLetterSelected(letter)">
+                <!-- Selected key-->
+                <button *ngSwitchCase="true" class="letter disabled">
+                    {{ letter }}
+                </button>
+                <!-- Not selected key -->
+                <button *ngSwitchCase="false" class="letter" (click)="onLetterClick(letter)">
+                    {{ letter }}
+                </button>
+            </ng-container>
+        </div>
+    </div>
+</div>

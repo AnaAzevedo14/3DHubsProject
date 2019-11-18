@@ -1,0 +1,16 @@
+.canvas {
+    display:flex;
+    justify-content: center;
+}   
+
+
+canvas.gallows {
+    z-index: 0;
+    border: 1px dashed red;
+    padding: 30px;
+    position: relative
+}
+
+canvas.hangman {
+    position: absolute; top: 113px; z-index: 1;
+}

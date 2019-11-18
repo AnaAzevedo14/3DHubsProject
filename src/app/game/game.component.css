@@ -1,0 +1,66 @@
+.startGame {
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.keyboardRow {
+    display: flex;
+    justify-content: center;
+}
+
+.letterRows {
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.letter {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    background: #2967c3;
+    border: 1px solid #2967c3;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button.letter:hover {
+    background: white;
+    border: 3px solid #2967c3;
+    color: #2967c3;
+}
+
+button.letter.disabled {
+    background: #3a3838;
+    color: black;
+    border: black;
+    cursor: not-allowed;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.word {
+    margin: 30px 0 10px 0;
+    font-size: 30px;
+}
+
+button.startButton {
+    width: 130px;
+    height: 40px;
+    background: #2967c3;
+    border: #2967c3;
+    color: white;
+    font-size: 20px;
+}
+
+button.startButton:hover {
+    width: 130px;
+    height: 40px;
+    background: white;
+    border: #2967c3 2px solid;
+    color: #2967c3;
+    font-size: 20px;
+}

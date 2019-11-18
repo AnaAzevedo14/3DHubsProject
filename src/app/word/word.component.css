@@ -1,0 +1,8 @@
+:host { 
+    justify-content: center;
+    display: flex;
+}
+
+.letters {
+    margin: 10px;
+}
