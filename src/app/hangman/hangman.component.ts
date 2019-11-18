@@ -3,8 +3,8 @@ import { Component, ViewChild, ElementRef, OnInit, SimpleChanges, OnChanges } fr
 /**
  * Description
  * This component is where the gallows and hangman is drawn
- * On each try a new body part is drawn
- * 
+ * On each failed try a new body part is drawn
+ *
  * Inputs - tries: number
  */
 @Component({
@@ -84,6 +84,10 @@ export class HangmanComponent implements OnInit, OnChanges {
     }
   }
 
+  /**
+   * Draw gallos on canvas
+   * @param ctx canvas context
+   */
   private drawGallows(ctx: CanvasRenderingContext2D) {
     if (ctx) {
       const lineWidth = 3;
