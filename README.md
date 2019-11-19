@@ -7,7 +7,7 @@ Hangman game with interactive keyboard
 Project developed with Angular framework.
 Simple page with an interface to play Hangman. The game selects a random word and the player must guess the word using the interactive keyboard. The user can only miss 5 times otherwise it is game over.
 
-[[https://github.com/AnaAzevedo14/3DHubsProject/blob/master/screenshot.png|alt=screenshot]]]
+[[https://github.com/AnaAzevedo14/3DHubsProject/blob/master/screenshot.png|alt=screenshot]]
 
 ## Installation
 
